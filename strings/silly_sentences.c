@@ -1,3 +1,5 @@
+//Joslynn Ramirez, silly sentences C
+
 #include <stdio.h>
 
 int main() {
