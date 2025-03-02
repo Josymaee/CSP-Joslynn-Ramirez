@@ -1,29 +1,18 @@
-// Joslynn Ramirez, Silly Sentences in C
-
 #include <stdio.h>
-#include <string.h>
 
-int main(void) {
-    char animal[20];
-    char place[20];
-    char verb[20];
-    char sentence[400] = "The ";
+int main() {
+    char animal[50], place[50], verb[50];
 
     printf("Name an animal: ");
-    scanf("%19s", animal);  
+    scanf("%49s", animal);
+
     printf("Name a place: ");
-    scanf("%19s", place);
-    printf("Name a past tense verb: ");
-    scanf("%19s", verb);
+    scanf("%49s", place);
 
-    strcat(sentence, animal);
-    strcat(sentence, " went to the ");
-    strcat(sentence, place);
-    strcat(sentence, " and ");
-    strcat(sentence, verb);
-    strcat(sentence, " with his friend, the mean dog.\n");
+    printf("Name a verb: ");
+    scanf("%49s", verb);
 
-    printf("%s", sentence);
+    printf("The %s went to the %s and it %s with their friend, the loud laughing donkey.\n", animal, place, verb);
 
     return 0;
 }
