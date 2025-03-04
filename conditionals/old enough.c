@@ -18,7 +18,7 @@ int main(void){
         printf("you cant drive quite yet...\n");
     }
     if (age >= 15){
-        printf("you are old enoug to get a learners permit\n");
+        printf("you are old enough to get a learners permit\n");
     }else{
         printf("you can not get a learners permit\n");
     }
