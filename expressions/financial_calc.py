@@ -1,33 +1,41 @@
 # Josy Ramirez, Financial calculator python
 
+# Budget Calculator
 
-# print statement that welcomes what the program does
-print("Hello!This is financial calulator to help keep track of your money")
-# ask what their income is (variable an input)
-income = float(input("What is your income?\n"))
-# ask what their rent is (variable an input)
-rent = float(input("How much is your rent?\n"))
-# ask what their utilities is (variable an input)
-utilities = float(input("How much is your utilities?\n"))
-# ask what their groceries is (variable an input)
-groceries = float(input("How much are your groceries?\n"))
-# ask what their transportation is (variable an input)
-transportation = float(input("How much is your transportation?\n"))
-# calculate savings as 10% of income (income*,1) (variable)
-# calculate spending as income-savings-rent-utilites-groceries-transportation (variable)
-# calculate percent income of rent (rent/income*100) (variable)
+# Get user inputs
+print("This is a budget calculator.")
+income = float(input("How much do you make a month? "))
 
+rent = float(input("How much does your rent cost? "))
+utilities = float(input("How much do your utilities cost? "))
+groceries = float(input("How much do your groceries cost? "))
+transportation = float(input("How much does your transportation cost? "))
 
-# calculate percent income of utilities (utilities/income*100) (variable)
-# calculate percent income of groceries (groceries/income*100) (variable)
-# calculate percent income of transportation (transportation/income*100) (variable)
-# calculate percent income of spending (spending/income*100) (variable)
+# Calculations
+savings = income * 0.2  # 20% of income saved
+expenses = rent + utilities + groceries + transportation
+spend = income - expenses - savings
 
+# Display summary
+print("\n--- Budget Summary ---")
+print(f"Total Income: ${income:.2f}")
+print(f"Total Expenses: ${expenses:.2f}")
+print(f"Savings: ${savings:.2f}")
+print(f"Remaining Money After Expenses and Savings: ${spend:.2f}")
 
-#Your rent is $XX.XX which is XX% of your income. (Print)
-#Your utilities is $XX.XX which is XX% of your income. (Print)
-#Your groceries is $XX.XX which is XX% of your income. (Print)
-#Your transportation is $XX.XX which is XX% of your income. (Print)
-#Your savings is $XX.XX which is XX% of your income. (Print)
-#Your spending is $XX.XX which is XX% of your income. (Print)
+# Calculate percentage breakdown
+prent = (rent / income) * 100
+putilities = (utilities / income) * 100
+pgroceries = (groceries / income) * 100
+ptransportation = (transportation / income) * 100
+psavings = (savings / income) * 100
+pexpenses = (expenses / income) * 100
 
+# Display percentage breakdown
+print("\n--- Expense Breakdown (as % of income) ---")
+print(f"Rent: {prent:.2f}%")
+print(f"Utilities: {putilities:.2f}%")
+print(f"Groceries: {pgroceries:.2f}%")
+print(f"Transportation: {ptransportation:.2f}%")
+print(f"Savings: {psavings:.2f}%")
+print(f"Total Expenses: {pexpenses:.2f}%")
