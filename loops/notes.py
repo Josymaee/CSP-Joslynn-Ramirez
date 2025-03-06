@@ -5,7 +5,7 @@
 
 #2. What are the two types of loops
      #For loop
-nums = [12, 3, 66, 7, 3, 3, 2]\
+nums = [12, 3, 66, 7, 3, 3, 2]
 
 for num in nums:
     print(num)
