@@ -3,5 +3,5 @@
 family = [1,2,3,4,5] #No ""
 members = ["Jose", "Anna", "Andie", "Addy"] 
 
-for members in members:
-    print(f"Hello,", members)
+for member in members: #Plural
+    print(f"Hello,", member) #dont make the words the same
