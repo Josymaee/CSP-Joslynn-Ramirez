@@ -1,6 +1,6 @@
 // Joslynn Ramirez, Loop notes c
 #include <stdio.h>
-
+#include <string.h>
 int main(void){
 // 1. What is a loop?
     //a section of code that gets repeated multiple times
