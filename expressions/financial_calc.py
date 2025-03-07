@@ -39,3 +39,5 @@ print(f"Groceries: {pgroceries:.2f}%")
 print(f"Transportation: {ptransportation:.2f}%")
 print(f"Savings: {psavings:.2f}%")
 print(f"Total Expenses: {pexpenses:.2f}%")
+
+print("Thank you for using my program! :)")
