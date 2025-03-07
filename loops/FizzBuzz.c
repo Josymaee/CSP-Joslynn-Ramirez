@@ -1,4 +1,4 @@
-// Josy Ramirez, TEMPLATE
+// Joslynn Ramirez, Fizz Buzz C
 
 #include <stdio.h>
 

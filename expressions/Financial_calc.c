@@ -35,4 +35,5 @@ int main(void) {
     printf("Remaining Money After Expenses and Savings: $%.2f\n", spend);
 
     // Calculate percentage breakdown
-    print = (rent 
+    prent = (rent / income) * 100;
+}
