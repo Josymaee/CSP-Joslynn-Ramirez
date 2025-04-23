@@ -12,7 +12,8 @@ function change (){
     }
 }
 function hello(){
-    document.getElementById("title").innerHTML = "Hello World!"
+    let name = window.prompt("What is your name?", "Josy")
+    document.getElementById("title").innerHTML = "Hello!" + name + "!"
 }
 function hover(){
     document.getElementById("img").srx = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cape_may.jpg/500px-Cape_may.jpg"
@@ -23,3 +24,10 @@ function leave(){
 function hidden(){
     document.getElementById ("oregon").style.display = "block"
 }
+function pop(){
+    window.alert("Really don't click that!")
+}
+function show (){
+    alert
+document.getElementById("lost"). style.display
+} 
