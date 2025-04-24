@@ -31,3 +31,13 @@ function show (){
     alert
 document.getElementById("lost"). style.display
 } 
+
+function view(){
+    if(document.getElementById("more").style.display==="block"){
+    document.getElementById("more").style.display = "none"
+    document.getElementById("shw").style.display = "Show more"
+    }else{
+        document.getElementById("more").style.display = "block"
+        document.getElementById("shw").style.display = "Show less"
+    }
+}
