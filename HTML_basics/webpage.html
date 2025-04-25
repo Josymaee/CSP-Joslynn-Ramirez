@@ -5,11 +5,13 @@
   <title>First Webpage!</title>
   <style>
     body {
-      background-color: #f4f4f9;
+      background-color: #f4f4f9; 
       color: #333;
       font-family: "Vibur", cursive;
-        font-weight: 400;
-        font-style: normal;
+      font-weight: 400;
+      font-style: normal;
+      margin: 0;
+      padding: 0;
     }
 
     h1 {
@@ -25,7 +27,7 @@
       color: #ecf0f1;
       text-align: center;
       padding: 5px;
-      margin: 5;
+      margin: 5px 0;
     }
 
     p {
@@ -44,15 +46,22 @@
     }
 
     #images {
-      text-align: center;
-      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
     }
 
-    #images img {
-      width: 60%;
+    .image-item {
+      flex: 1 1 300px;
       max-width: 500px;
+      text-align: center;
+    }
+
+    .image-item img {
+      width: 100%;
       height: auto;
-      margin: 15px 0;
       border-radius: 8px;
       box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
     }
@@ -77,52 +86,41 @@
     and opportunities within different groups of a society...
   </p>
 
+  <h3>Where is Income Inequality More Common?</h3>
+  <p>
+    Income inequality is found to be more common in South Africa as well as Namibia...
+  </p>
+
+  <h4>Key Causes of Economic Inequality in Southern Africa:</h4>
+  <ul>
+    <li>Legacy of colonialism and apartheid</li>
+    <li>Unequal access to quality education and healthcare</li>
+    <li>Limited job opportunities in rural areas</li>
+    <li>Racial and geographic disparities</li>
+    <li>Lack of access to financial resources</li>
+  </ul>
+
   <div id="images">
-    <img
-      src="https://www.wicked7.org/wp-content/uploads/2021/02/Screen-Shot-2021-02-11-at-11.28.54-AM.png"
-      alt="Economic Inequality"
-    >
-    <img
-      src="https://webassets.oxfamamerica.org/media/images/inequality-map-2440x1526.original.jpg"
-      alt="Economic inequality most common color map"
-    >
-
-    <h3>Where is Income Inequality More Common?</h3>
-    <p>
-      Income inequality is found to be more common in South Africa as well as Namibia...
-    </p>
-
-    <h4>Key Causes of Economic Inequality in Southern Africa:</h4>
-    <ul>
-      <li>Legacy of colonialism and apartheid</li>
-      <li>Unequal access to quality education and healthcare</li>
-      <li>Limited job opportunities in rural areas</li>
-      <li>Racial and geographic disparities</li>
-      <li>Lack of access to financial resources</li>
-    </ul>
-
-    <img
-      src="https://images.theconversation.com/files/548035/original/file-20230913-15-wc6fcg.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=926&fit=clip"
-      alt="Southern Africa"
-    >
-    <p>Image from: Oxfam America</p>
-
-    <p>
-      Learn more about economic inequality at 
-      <a href="https://www.oxfam.org/en/what-we-do/issues/economic-inequality" target="_blank">Oxfam’s website</a>.
-    </p>
-    
-    <img
-      src="https://cdni.iconscout.com/illustration/premium/thumb/income-gap-illustration-download-in-svg-png-gif-file-formats--inequality-revenue-class-salary-middle-balancing-work-and-family-pack-business-illustrations-6139344.png"
-      alt="Income Gap Illustration"
-    >
-    <p>Image from: IconScout</p>
-    <div class="flex-container">
-      <h4>Top Countries</h4>
-      <div>South Africa</div>
-      <div>Namibia</div>
-      <div>Haiti</div>
+    <div class="image-item">
+      <img src="https://www.wicked7.org/wp-content/uploads/2021/02/Screen-Shot-2021-02-11-at-11.28.54-AM.png" alt="Economic Inequality">
+    </div>
+    <div class="image-item">
+      <img src="https://webassets.oxfamamerica.org/media/images/inequality-map-2440x1526.original.jpg" alt="Economic inequality map">
+    </div>
+    <div class="image-item">
+      <img src="https://images.theconversation.com/files/548035/original/file-20230913-15-wc6fcg.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=926&fit=clip" alt="Southern Africa">
+      <p>Image from: Oxfam America</p>
+    </div>
+    <div class="image-item">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/income-gap-illustration-download-in-svg-png-gif-file-formats--inequality-revenue-class-salary-middle-balancing-work-and-family-pack-business-illustrations-6139344.png" alt="Income Gap Illustration">
+      <p>Image from: IconScout</p>
     </div>
   </div>
+
+  <p>
+    Learn more about economic inequality at 
+    <a href="https://www.oxfam.org/en/what-we-do/issues/economic-inequality" target="_blank">Oxfam’s website</a>.
+  </p>
 </body>
 </html>
+
