@@ -1,7 +1,7 @@
 //javascript notes
 
 function show(){
-    document.getElementById("oregon").style.display = "block"
+    document.getElementById("sunset").style.display = "block"
 }
 
 function hello(){
@@ -36,5 +36,5 @@ function change (){
 }
 
 function popup(){
-    window.alert("Don't click this. Realy!")
+    window.alert("Don't click this. Really!")
 }
