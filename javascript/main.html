@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Javascript Notes</title>
-        <script src="notes.js"></script>
-        <style>
-            #btn{
-                height: 50px;
-                width: 100px;
-                background-color: lightgrey;
-                border-radius: 3px;
-                border: 1px solid gray;
-            }
-            #image{
-                height: 150px;
-                width: auto;
-            }
-            #oregon{
-                display: none;
-                height: 300px;
-                width: auto;
-            }
-        </style>
-    </head>
-    <body>
-        <h1 id="title" onclick="show()">Javascript Notes </h1>
-        <p id="pop" onclick="popup()">Don't click me!</p>
-        <button id="btn" onclick="hello()" onmouseenter="enter()" 
-        onmouseout="out()" onmousedown="down()" onmouseup="enter()"
-        >Click Me!</button>
-        <br>
-        <br>
-        <img id="image" alt="sunset" onmouseover="change()"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQscYIB3D
-        XqEvjTi5mV_ldX6p1zQ1LvAnYE9bB3SkgzKPFI1MjSC2nfgbRfKUW_ANS7TJ0&usqp=CAU"
-        alt="sunset">    
-        <br>
-        <br>
-        <img id="lost" alt="orgeon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQscYIB3DXqEvjTi5mV_ldX6p1zQ1LvAnYE9bB3SkgzKPFI1MjSC2nfgbRfKUW_ANS7TJ0&usqp=CAU">
-        <button id="shw" onclick="view()">Show More</button>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Notes</title>
+  <style>
+    #btn {
+      height: 50px;
+      width: 100px;
+      background-color: lightgrey;
+      border-radius: 3px;
+      border: 1px solid gray;
+    }
+    #image {
+      height: 150px;
+      width: auto;
+    }
+    #oregon {
+      display: none;
+      height: 300px;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title" onclick="show()">Javascript Notes</h1>
+
+  <p id="pop" onclick="popup()">Don't click me!</p>
+
+  <button id="btn"
+    onclick="hello()"
+    onmouseenter="enter()"
+    onmouseout="out()"
+    onmousedown="down()"
+    onmouseup="enter()">
+    Click Me!
+  </button>
+
+  <br><br>
+
+  <img id="image"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQscYIB3DXqEvjTi5mV_ldX6p1zQ1LvAnYE9bB3SkgzKPFI1MjSC2nfgbRfKUW_ANS7TJ0&usqp=CAU"
+    alt="sunset"
+    onmouseover="change()"
+    onmouseout="reset()">
+
+  <br><br>
+
+  <img id="oregon"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Crater_Lake_Oregon_USA.jpg/800px-Crater_Lake_Oregon_USA.jpg"
+    alt="Oregon Scenery">
+
+  <button id="shw" onclick="view()">Show More</button>
+</body>
 </html>
