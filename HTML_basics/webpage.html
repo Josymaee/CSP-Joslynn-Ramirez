@@ -64,15 +64,6 @@
       height: auto;
       border-radius: 8px;
       box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-
-    .hover-image {
-      content: url("https://cdn-icons-png.flaticon.com/512/3135/3135715.png");
-    }
-
-    .hover-image:hover {
-      content: url("https://cdn-icons-png.flaticon.com/512/3135/3135768.png");
     }
 
     a {
@@ -83,35 +74,6 @@
 
     a:hover {
       text-decoration: underline;
-    }
-
-    
-    #toggleButton {
-      display: block;
-      margin: 30px auto;
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #2c3e50;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    #toggleButton:hover {
-      background-color: #34495e;
-    }
-
-    /* Initially hide the toggled content */
-    #toggleContent {
-      display: block;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    #toggleImage {
-      max-width: 300px;
-      margin-top: 10px;
     }
   </style>
 </head>
@@ -159,28 +121,5 @@
     Learn more about economic inequality at 
     <a href="https://inequality.org/facts/income-inequality/" target="_blank">Inequality.org</a>.
   </p>
-
-  <!-- Toggle Content Section -->
-  <div id="toggleContent">
-    <p>This is extra content that can be hidden or shown.</p>
-    <img id="toggleImage" class="hover-image" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Hover Image">
-  </div>
-
-  <!-- Button -->
-  <button id="toggleButton">Hide/Show Content</button>
-
-  <!-- Script to toggle visibility -->
-  <script>
-    const toggleButton = document.getElementById("toggleButton");
-    const toggleContent = document.getElementById("toggleContent");
-
-    toggleButton.addEventListener("click", () => {
-      if (toggleContent.style.display === "none") {
-        toggleContent.style.display = "block";
-      } else {
-        toggleContent.style.display = "none";
-      }
-    });
-  </script>
 </body>
 </html>
