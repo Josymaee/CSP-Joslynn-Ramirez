@@ -1,7 +1,7 @@
 // JavaScript Notes
 
 function show() {
-  document.getElementById("oregon").style.display = "block"; // Make sure the HTML has id="oregon"
+  document.getElementById("oregon").style.display = "block";
 }
 
 function hello() {
@@ -33,11 +33,10 @@ let images = [
 let counter = 0;
 
 function change() {
-  const img = document.getElementById("image"); // Make sure HTML uses id="image"
+  const img = document.getElementById("image");
   img.src = images[counter];
-  counter = (counter + 1) % images.length; // Loop back to 0 when done
+  counter = (counter + 1) % images.length;
 }
-
 function popup() {
   window.alert("Don't click this. Really!");
 }
