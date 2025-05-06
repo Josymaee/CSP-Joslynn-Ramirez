@@ -1,3 +1,4 @@
+//Javascript webpage
 document = webpage.js
 
 function more(){
@@ -11,5 +12,5 @@ function more(){
     }
 }
 function change(){
-    document.getElementById("smtelse").src = "https://www.investopedia.com/thmb/Q0NCXv1iSIi9edd36opDXvxvRRQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/income-inequality.asp-Final-274ca61a88f043e1b2f1ce02167fe944.jpg"
+    document.getElementById("smtelse").src = "https://static.vecteezy.com/system/resources/previews/002/118/311/non_2x/economic-inequality-rich-and-poor-gap-unfairness-income-concept-vector.jpg"
 }

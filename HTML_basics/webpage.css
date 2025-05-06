@@ -1,0 +1,31 @@
+body{
+  color: white;
+    background-color: #09093B;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+img{   
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+h1{
+    text-align: center;
+}
+.page{
+    height: 123px;
+    display: block;
+    margin: auto;
+   
+}
+#smt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+}
+#extra{
+    display: none;
+}
