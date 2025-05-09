@@ -1,103 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Webpage</title>
-    <style>
-        body {
-            background-color: rgb(233, 200, 156);
-            color: rgb(32, 32, 29);
-            font-family: "Fugaz One", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capitol Reef National Park</title>
 
-        p {
-            background-color: rgba(255, 255, 255, 0.556);
-            height: 50px;
-            width: auto;
-            padding: 10px;
-            margin: 2px;
-        }
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-        .column img {
-            width: auto;
-            height: 150px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-        }
+  <link rel="stylesheet" href="style.css" />
 
-        .hike img {
-            width: auto;
-            height: 300px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-        }
-
-        #content {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-        }
-
-        #main {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        #img-container {
-            display: flex;
-            justify-content: baseline;
-        }
-
-        img {
-            height: 200px;
-        }
-    </style>
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header>
     <h1>Capitol Reef National Park</h1>
-    <div class="row">
-        <div class="column">
-            <img src="https://dtjew9b6f6zyn.cloudfront.net/wp-content/uploads/2020/06/extra_large_992a0217589a1e2753b21733995c1d0a.jpg" alt="Capitol Gorge">
-        </div>
-        <div class="column">
-            <img src="https://capitolreefcountry.com/wp-content/uploads/2021/04/Fruita-District-1200-x-800.jpg" alt="green">
-        </div>
-        <div class="column">
-            <img src="https://guidealong.com/wp-content/uploads/2021/06/Signature.jpg" alt="goldenhr">
-        </div>
+    <p class="sub-heading">The adventure of a lifetime awaits you!</p>
+  </header>
+
+  <div class="row">
+    <div class="column">
+      <img src="https://dtjew9b6f6zyn.cloudfront.net/wp-content/uploads/2020/06/extra_large_992a0217589a1e2753b21733995c1d0a.jpg" alt="Capitol Gorge" />
     </div>
-
-    <div id="paras1">
-        <p>You should visit Capitol Reef National Park for its breathtaking landscapes, where you can explore colorful canyons, towering cliffs, and unique rock formations. The park offers a range of activities, from scenic drives and hiking to stargazing under some of the darkest skies in the country, making it a perfect destination for outdoor enthusiasts and nature lovers alike.</p>
-        <p><img src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/capitol-reef/web2000_capitol-reef_hickmanbridge_-burr022620_078.jpg" alt="Capitol Reef"></p>
-        <p>The park is known for its colorful canyons, towering cliffs, domes, and natural bridges. One of its most distinctive features is the Waterpocket Fold, a nearly 100-mile-long wrinkle in the Earth’s crust that was formed millions of years ago. Early settlers named the area “Capitol Reef” because the white Navajo Sandstone domes looked like Capitol building domes, and the rocky ridges reminded them of ocean reefs that were difficult to cross. <a href="https://www.nps.gov/places/capitol-dome.htm" target="_blank">Learn more about the Capital Dome.</a></p>
+    <div class="column">
+      <img src="https://capitolreefcountry.com/wp-content/uploads/2021/04/Fruita-District-1200-x-800.jpg" alt="Green Valley" />
     </div>
-
-    <h2>Learn About the Park</h2>
-    <p>Capitol Reef is a national park located in south-central Utah, in the heart of red rock country.</p>
-    <h3>3 Fun Facts About Capitol Reef National Park:</h3>
-    <ul>
-        <li>Capitol Reef is designated an International Dark Sky Park, offering some of the darkest night skies in the country, perfect for stargazing.</li>
-        <li>Capitol Reef National Park has large fruit orchards, which visitors are allowed to pick fruit from when in season.</li>
-        <li>What makes the landscape of Capitol Reef so unique is the "wrinkly" rocky formations that make it look like reefs found underwater. Hence the name.</li>
-    </ul>
-
-    <img id="img1" class="capitol" onmouseover="change()" src="" height="150px">
-    <button id="btn" onclick="hello()">Click here to view more information.</button>
-
-    <div id="on">
-        <p id="hiddenpara">Capitol Reef National Park is a remarkable place that combines stunning natural landscapes with rich cultural history. From its unique rock formations and the Waterpocket Fold to ancient petroglyphs and historic orchards, the park offers a diverse and unforgettable experience. Whether you're exploring its trails or learning about its past, Capitol Reef is a special destination worth discovering.</p>
-        <img id="epicthings" src="https://usadventurer.com/wp-content/uploads/2023/08/standing-on-cassidy-arch-capitol-reef-national-park.jpg" height="500px" alt="Scenic view of Capitol Reef">
+    <div class="column">
+      <img src="https://guidealong.com/wp-content/uploads/2021/06/Signature.jpg" alt="Golden Hour" />
     </div>
-    <a href="https://www.nps.gov/care/index.htm" target="_blank">Click here to learn more about Capitol Reef!</a>
+  </div>
 
-    <h4>What is there to do at Capitol Reef?</h4>
-    <p>There is a lot to do and see at Capitol Reef: you can hike, camp, and go for a scenic drive through the park.</p>
+  <div id="paras1">
+    <p>
+      Capitol Reef National Park is the perfect destination for those who love exploring breathtaking landscapes! From colorful canyons and towering cliffs to rock formations that seem otherworldly, this park is a must-see.
+    </p>
+    <p>
+      <img src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/three-season-photography/mighty-5/capitol-reef/web2000_capitol-reef_hickmanbridge_-burr022620_078.jpg" alt="Capitol Reef" />
+    </p>
+    <p>
+      Discover the Waterpocket Fold, a massive, 100-mile-long wrinkle in the Earth’s crust. <a href="https://www.nps.gov/places/capitol-dome.htm" target="_blank">Learn more about the Capitol Dome.</a>
+    </p>
+  </div>
 
-    <div class="hike">
-        <img src="https://guidealong.com/wp-content/uploads/2021/06/Signature.jpg" alt="hike">
-    </div>
+  <h2>Discover More About the Park</h2>
+  <p>Located in the heart of red rock country, Capitol Reef National Park is one of Utah’s best-kept secrets!</p>
+
+  <h3>3 Fun Facts:</h3>
+  <ul>
+    <li>It's an International Dark Sky Park, perfect for stargazing!</li>
+    <li>You can pick fresh fruit from historic orchards in Fruita.</li>
+    <li>The park's name comes from its dome-shaped rock formations and "reef"-like ridges.</li>
+  </ul>
+
+  <img
+    id="img1"
+    class="capitol"
+    src="data:image/jpeg;base64,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"
+    alt="Capitol View"
+  />
+
+  <button id="btn" onclick="toggleInfo()">Click to Discover More!</button>
+
+  <div id="on">
+    <p id="hiddenpara">
+      Capitol Reef National Park is an unforgettable experience combining stunning landscapes with rich cultural history. Explore everything from unique rock formations to ancient petroglyphs and historic orchards.
+    </p>
+    <img id="epicthings" src="https://usadventurer.com/wp-content/uploads/2023/08/standing-on-cassidy-arch-capitol-reef-national-park.jpg" alt="Scenic View of Capitol Reef" />
+  </div>
+
+  <a href="https://www.nps.gov/care/index.htm" target="_blank" class="learn-more">Click to learn more about Capitol Reef!</a>
+
+  <h4>What Can You Do Here?</h4>
+  <p>Hike, camp, or just enjoy the scenic beauty as you drive through the park. There’s something for everyone!</p>
+
+  <div class="hike">
+    <img src="https://guidealong.com/wp-content/uploads/2021/06/Signature.jpg" alt="Hiking in Capitol Reef" />
+  </div>
+  <button id="btn" onclick="toggleInfo()">Click to Discover More!</button>
 </body>
 </html>
+
