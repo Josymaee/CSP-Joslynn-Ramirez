@@ -1,2 +1,90 @@
-<style>
+/* Add a vibrant gradient background and some cheerful fonts */
+body {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  color: #4b2e05;
+  font-family: 'Comic Sans MS', 'Pacifico', cursive;
+  margin: 0;
+  padding: 0;
+}
 
+/* Make the title pop! */
+h1 {
+  text-align: center;
+  color: #ff3c38;
+  font-size: 3rem;
+  text-shadow: 2px 2px #ffffff;
+  margin-top: 20px;
+}
+
+/* Style the paragraph container */
+#paras1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 16px;
+  gap: 25px;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+/* Paragraphs with colorful borders */
+#paragraph1, #para3, #hiddenpara, #lili {
+  background-color: #fff8dc;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 25px;
+  border: 6px solid #ff7f50;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+#paragraph1:hover, #para3:hover, #hiddenpara:hover, #lili:hover {
+  transform: scale(1.03);
+}
+
+/* Centered image block */
+#para2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 20px auto;
+  border: 6px solid #7ec8e3;
+  border-radius: 30px;
+  background-color: #fff0f5;
+}
+
+/* Hidden section */
+#on {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 20px;
+  background-color: #e0f7fa;
+}
+
+/* Fun image layout */
+#img-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #ffe0b2;
+}
+
+/* All images */
+#img1, #img2 {
+  max-height: 300px;
+  border: 6px solid #ffb347;
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Epic section */
+#epicthings {
+  padding: 20px;
+  border: 6px solid #4dd0e1;
+  background-color: #f1f8e9;
+  border-radius: 20px;
+}
